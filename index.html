@@ -2,68 +2,53 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<div class="container">
-  	<div class="row">
-    	<div class="col-md-6 col-md-offset-3">
-      	<div class="well">
-	        <h2>Registrate Gratis</h2>
-	        <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-	          <%= devise_error_messages! %>
-			          
-        <div class="form=group">
-          <div class="field">
-              <%= f.label :email %><br />
-              <%= f.email_field :email, autofocus: true, :class => 'form-control' %>
-          </div>
-        </div>
-
-      	<div class="form=group">
-        	<div class="field">
-          <%= f.label :phone %><br />
-          <%= f.text_field :phone,   :class => 'form-control' %>
-        	</div>
-     		</div>
-
-        <div class="form=group">
-          <div class="field">
-            <%= f.label :password %>
-            <% if @minimum_password_length %>
-            <em>(<%= @minimum_password_length %> characters minimum)</em>
-            <% end %><br />
-            <%= f.password_field :password, autocomplete: "off", :class => 'form-control' %>
-          </div>
-        </div>
-
-          <div class="form=group">
-            <div class="field">
-              <%= f.label :password_confirmation %><br />
-              <%= f.password_field :password_confirmation, autocomplete: "off", :class => 'form-control' %>
-            </div>
-          </div>
-
-          <div class="actions">
-            <%= f.submit "Registrar", :class => 'btn btn-primary' %>
-          </div>
-        <% end %>
-
-
-      </div>
-    </div>
-  </div>
-</div>
-
+	<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.css">
+ 	<link rel="stylesheet" href="font-awesome/font-awesome-4.3.0/css/font-awesome.css">
+	<title>Curriculum</title>
 </head>
-<body>
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	  ga('create', 'UA-65837625-1', 'auto');
-	  ga('send', 'pageview');
+	<body>		
+		<div class="container">
+			<div class="col-md-6">
+				<h1>Pablo Ivan Blanco Hernández</h1>
+				<img src="Imagenes/Pablo.jpg" style="width:115px;height:100px;">
+				<h3>Contacto: </h3>
+				<p>23 años</p>
+				<p>**********@hotmail.com</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis pariatur repellendus ipsum eligendi dolorem deleniti nesciunt praesentium nostrum similique sit quos cum nisi, vitae veritatis officiis voluptate, porro veniam blanditiis.</p>
+			</div>
+		</div>
+		<div class="container">
+		<div class="col-md-4">
+					<form>
+					  <div class="form-group">
+					    <label for="nombre">Nombre</label>
+					    <input type="nombre" class="form-control">
+					  </div>
 
-	</script>
-</body>
+					  <div class="form-group">
+					    <label for="email">Email</label>
+					    <input type="email" class="form-control">
+					  </div>
+					  
+					  <div class="form-group">
+					    <label for="comentarios">Comentarios</label>
+					    <input type="comentario" class="form-control" style="height:150px">
+					  </div>
+
+					  <button type="enviar" class="btn btn-default">Enviar</button>
+					</form>
+				</div>
+			
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-65837625-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+	</body>
 </html>
